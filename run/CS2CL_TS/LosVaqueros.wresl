@@ -1,0 +1,28 @@
+/***********************
+LosVaqueros.WRESL
+Holly Canada, DWR
+05-05-2014
+***********************/
+
+Define EVAP_S422_CL {timeseries 'EVAP_S422' kind 'EVAPORATION-RATE' units 'IN'}
+Define I422_CL {timeseries 'I422' kind 'FLOW-INFLOW' units 'TAF'}
+Define I422_PPT_CL {timeseries 'I422_PPT' kind 'PRECIP-RATE' units 'IN'}
+Define SB_DEMAND_CL {timeseries 'SB_DEMAND' kind 'LV-PARTNER-DEMAND' units 'CFS'}
+Define SF_DEMAND_CL {timeseries 'SF_DEMAND' kind 'LV-PARTNER-DEMAND' units 'CFS'}
+Define WQ406A_MS_CL {timeseries 'WQ406A_MS' kind 'SALINITY' units 'MG/L'}
+Define WQ408_OR_CL {timeseries 'WQ408_OR' kind 'SALINITY' units 'MG/L'}
+!Define WQ408_RS_CL {timeseries 'WQ408_RS' kind 'SALINITY' units 'MG/L'}
+Define WQ408_VC_CL {timeseries 'WQ408_VC' kind 'SALINITY' units 'MG/L'}
+Define WQ422_INFLOW_CL {timeseries 'WQ422_INFLOW' kind 'SALINITY' units 'MG/L'}
+
+
+Define EVAP_S422 {alias EVAP_S422_CL kind 'EVAPORATION-RATE' units 'IN'}
+Define I422 {alias I422_CL kind 'FLOW-INFLOW' units 'TAF'}
+Define I422_PPT {alias I422_PPT_CL kind 'PRECIP-RATE' units 'IN'}
+Define SB_DEMAND {alias SB_DEMAND_CL kind 'LV-PARTNER-DEMAND' units 'CFS'}
+Define SF_DEMAND {alias SF_DEMAND_CL kind 'LV-PARTNER-DEMAND' units 'CFS'}
+Define WQ406A_MS {alias WQ406A_MS_CL kind 'SALINITY' units 'MG/L'}
+Define WQ408_OR {alias WQ408_OR_CL kind 'SALINITY' units 'MG/L'}
+!Define WQ408_RS {alias WQ408_RS_CL kind 'SALINITY' units 'MG/L'}
+Define WQ408_VC {alias WQ408_VC_CL kind 'SALINITY' units 'MG/L'}
+Define WQ422_INFLOW {alias WQ422_INFLOW_CL kind 'SALINITY' units 'MG/L'}

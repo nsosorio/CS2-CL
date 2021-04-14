@@ -1,0 +1,22 @@
+*.bak
+*.bat
+*.config
+*.config.par
+*.docx
+*.launch
+*.log
+*.project
+*=WreslCheck_main=.log
+*.dsc
+*.dsd
+*.dsk
+*.sty
+*.wresl.par
+
+# File names
+Error_evaluation.txt
+Error_solving.txt
+
+# Folders
+CalSimDSS/
+
