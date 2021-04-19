@@ -2,7 +2,6 @@
 *.bat
 *.config
 *.config.par
-*.docx
 *.launch
 *.log
 *.project
