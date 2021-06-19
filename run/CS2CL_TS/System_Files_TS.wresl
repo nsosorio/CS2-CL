@@ -84,6 +84,7 @@ define D104_NP {timeseries kind 'FLOW-DELIVERY' units 'CFS'}!Red Bluff Non-Proje
 define D162_NP {timeseries kind 'FLOW-DELIVERY' units 'CFS'}!Non-Project DIVERSION AT SACRAMETO AND AMERICAN RIVER CONFLUENCE
 define D167_NP {timeseries kind 'FLOW-DELIVERY' units 'CFS'}!Non-Project DIVERSION AT SACRAMETO AND AMERICAN RIVER CONFLUENCE
 define D8_NP   {timeseries kind 'FLOW-DELIVERY' units 'CFS'}!Non-Project Diversion from Folsom reservoir
+define D8_ED_NP   {timeseries kind 'FLOW-DELIVERY' units 'CFS'}!Non-Project Diversion from Folsom reservoir - El Dorado
 define D9_NP   {timeseries kind 'FLOW-DELIVERY' units 'CFS'} !Non-Project Diversion at Nimbus
 define D9A_PLS {timeseries kind 'FLOW-DELIVERY' units 'CFS'} !Non-Project Diversion at Nimbus
 
@@ -92,6 +93,7 @@ define demand_D_RedBlf_NP {alias D104_NP         kind 'DEMAND' units 'CFS'}!Red 
 define demand_D_Wilkns_NP {alias D113A+D113B     kind 'DEMAND' units 'CFS'}!Wilkins Slough Non-Project Diversion
 define demand_D_SacAme_NP {alias D162_NP+D167_NP kind 'DEMAND' units 'CFS'}!Non-Project DIVERSION AT SACRAMETO AND AMERICAN RIVER CONFLUENCE
 define demand_D_Folsm_NP  {alias D8_NP           kind 'DEMAND' units 'CFS'}!Non-Project Diversion from Folsom reservoir
+define demand_D_Folsm_ED_NP  {alias D8_ED_NP           kind 'DEMAND' units 'CFS'}!Non-Project Diversion from Folsom reservoir
 define demand_D_Nimbus_NP {alias D9_NP+D9A_PLS   kind 'DEMAND' units 'CFS'} !Non-Project Diversion at Nimbus
 define demand_D_HSt_NP    {alias D302            kind 'DEMAND' units 'CFS'}!Non-Project Diversion at H St
 define demand_D_CCWDVCOR  {alias D408_VC+D408_OR kind 'DEMAND' units 'CFS'}!Project Diversion to CCWD VC OR

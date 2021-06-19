@@ -151,6 +151,7 @@ define dem_DSA70_PMI {timeseries kind 'DEMAND-CVP-MI' units 'TAF'}
 define dem_DSA70_PAG {timeseries kind 'DEMAND-CVP-AG' units 'TAF'}
 define dem_DSA70_PSC {timeseries kind 'DEMAND-CVP-SC' units 'TAF'}
 
+define dem_ed_pmi {timeseries kind 'DEMAND-CVP-MI' units 'TAF'}
 !******************* CUMULATIVE YEARLY DEMANDS  ****************************
 ! This section calculates the ANNUAL CVP NOD demands based on Maximum Demands in input
 
@@ -188,15 +189,15 @@ define acvpdem_pmi_n_ts {   ! CVP NOD MI DEMANDS
 
        case Oct1922 {  ! special case for first wateryear, Sum Oct-Sep
        condition month == OCT .and. wateryear == 1922
-       sum(i=0,11,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) }
+       sum(i=0,11,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) + dem_ed_pmi(i) }
 
        case Mar2003 {  ! special case for last wateryear, Sum Oct-Sep
        condition month == MAR .and. wateryear == 2003
-       sum(i=prevOCT,SEP-month,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) }
+       sum(i=prevOCT,SEP-month,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) + dem_ed_pmi(i) }
 
        case March { ! March for wateryears 1922 - 2002
        condition month == MAR .and. wateryear < 2003
-       sum(i=0,11,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) }
+       sum(i=0,11,1) dem_d104_pmi_CL(i) + dem_DSA70_pmi(i) + dem_ed_pmi(i) }
 
        case Rest {
        condition always
@@ -606,15 +607,15 @@ define acvpdem_70_ts {
 
        case Oct1922 {  ! special case for first wateryear, Sum Oct-Sep
        condition month == OCT .and. wateryear == 1922
-       sum(i=0,11,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i)}
+       sum(i=0,11,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i)+ dem_ed_pmi(i)}
 
        case Mar2003 {  ! special case for last wateryear, Sum Oct-Sep
        condition month == MAR .and. wateryear == 2003
-       sum(i=prevOCT,SEP-month,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i)}
+       sum(i=prevOCT,SEP-month,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i) + dem_ed_pmi(i)}
 
        case March { ! March for wateryears 1922 - 2002
        condition month == MAR .and. wateryear < 2003
-       sum(i=0,11,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i)}
+       sum(i=0,11,1) dem_DSA70_psc(i) + dem_DSA70_pmi(i) + dem_ed_pmi(i)}
 
        case Rest {
        condition always
