@@ -22,6 +22,7 @@ define demand_D420_CL {timeseries 'demand_D420_' kind 'DEMAND' units 'cfs' }
 define lim_CVP_ann_CL {timeseries 'lim_CVP_ann_' kind 'allocation-limit' units 'cfs'}
 !define VernWQfinal  {timeseries kind 'Salinity-EC' units 'umhos/cm'}
 define SJR_ann_estDV {timeseries kind 'ANN-PARAMETER' units 'CFS'}
+define R504est_DV {timeseries kind 'flow-return' units 'cfs'}
 
 !CalLite definition
 define C_cosumnes_VAMP {alias C501_VAMPDO kind 'FLOW-CHANNEL'  units 'CFS'}
@@ -35,6 +36,7 @@ define D514A_1_VAMP {alias D514A kind 'FLOW-DELIVERY' units 'CFS'}
 define D514B_VAMP {alias D514B kind 'FLOW-DELIVERY' units 'CFS'}
 !define VernWQfinal {alias VernWQfinal  kind 'Salinity-EC' units 'umhos/cm'}
 define SJR_ann_est_v {alias SJR_ann_estDV kind 'ANN-PARAMETER' units 'CFS'}
+define R_Mokelumne {alias R504est_DV kind 'flow' units 'CFS'}
 
 /** From: run/common/cycle_output **/
 
