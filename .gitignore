@@ -2,7 +2,6 @@
 *.bat
 *.config
 *.config.par
-*.launch
 *.log
 *.project
 *=WreslCheck_main=.log
