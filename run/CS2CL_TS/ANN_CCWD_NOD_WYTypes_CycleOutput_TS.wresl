@@ -36,7 +36,7 @@ define D514A_1_VAMP {alias D514A kind 'FLOW-DELIVERY' units 'CFS'}
 define D514B_VAMP {alias D514B kind 'FLOW-DELIVERY' units 'CFS'}
 !define VernWQfinal {alias VernWQfinal  kind 'Salinity-EC' units 'umhos/cm'}
 define SJR_ann_est_v {alias SJR_ann_estDV kind 'ANN-PARAMETER' units 'CFS'}
-define R_Mokelumne {alias R504est_DV kind 'flow' units 'CFS'}
+define R_MokelumneEst {alias R504est_DV kind 'flow' units 'CFS'}
 
 /** From: run/common/cycle_output **/
 

@@ -433,10 +433,8 @@ define dem_D9b_pmi_ann   {alias dem_D9b_pmi_ann_CL  kind 'DEMAND-CVP-MI' units '
 
 ! Timeseries for defining diversion requirements
 define prj_dr70_imi_CL {timeseries 'prj_dr70_imi' kind 'DEM-CVP-INDOORMI' units 'TAF'} ! Additional project diversion requirement for indoor M&I demand
-define prj_ed_imi_CL {timeseries 'prj_ed_imi' kind 'DEM-CVP-INDOORMI' units 'TAF'} ! Additional project diversion requirement for indoor M&I demand
 
 define prj_dr70_imi   {alias prj_dr70_imi_CL kind 'DEM-CVP-INDOORMI' units 'TAF'}
-define prj_ed_imi   {alias prj_ed_imi_CL kind 'DEM-CVP-INDOORMI' units 'TAF'}
 
 /*** GROUP 2: timeseries computed from Calsim timeseries ***/
 
