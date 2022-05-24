@@ -12,6 +12,8 @@ __Z3 inducates that the time series are stored from B2 step in Multistudy CalSim
 define C3MIF__z3 {timeseries kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C5MIF__z3 {timeseries kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C9MIF__z3 {timeseries kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define minflowFMPAmer {timeseries 'C9_FMP_MIF' kind 'INIT_FLOW' units 'CFS'}
+
 ! B2 action triggers
 define B2Action2On__z3 {timeseries kind 'TRIGGER' units 'NONE'}
 define B2Action3On__z3 {timeseries kind 'TRIGGER' units 'NONE'}

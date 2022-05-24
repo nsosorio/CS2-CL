@@ -98,6 +98,10 @@ define demand_D_CCWDVCOR  {alias D408_VC+D408_OR kind 'DEMAND' units 'CFS'}!Proj
 define demand_D_CCWDIntk  {alias D408_RS         kind 'DEMAND' units 'CFS'}!Project Diversion to CCWD intake
 define demand_D_Hood_NP      {alias demand_D400B kind 'NETDICU_POS' units 'CFS'}
 
+!== DeliveryP for routing and MTO test model
+define demand_D_RedBlf_P {alias D104_PRJ + D112        kind 'DEMAND' units 'CFS'}!Red Bluff Non-Project Diversion
+define demand_D_Wilkns_P {alias D114 + D122A + D122B + D129A + D128     kind 'DEMAND' units 'CFS'}!Wilkins Slough Non-Project Diversion
+
 
 /** Demand_DICU for CalSim SV file 
 define demand_D_BrananIs_NP  {alias demand_D404  kind 'NETDICU_POS' units 'CFS'}
@@ -216,6 +220,9 @@ define SD_Perris     {alias max(0.0, -D27+C899) kind 'STORAGE-DIVERSION' units '
 define S1LEVEL2 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
 define S1LEVEL3 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
 define S4LEVEL2 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
+define S4LEVEL2 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
+define S4LEVEL3dv {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
+
 define S4LEVEL4 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
 define S4LEVEL5 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
 define S6LEVEL5 {timeseries kind 'STORAGE-LEVEL' units 'TAF'}
@@ -237,6 +244,7 @@ define EVAP_S12 {timeseries kind 'EVAPORATION-RATE' units 'IN'}
 define S_Trntylevel2 {alias S1LEVEL2 kind 'STORAGE-LEVEL' units 'TAF'}
 define S_Trntylevel3 {alias S1LEVEL3 kind 'STORAGE-LEVEL' units 'TAF'}
 define S_Shstalevel2 {alias S4LEVEL2 kind 'STORAGE-LEVEL' units 'TAF'}
+define S_Shstalevel3adj {alias S4LEVEL3dv kind 'STORAGE-LEVEL' units 'TAF'}
 define S_Shstalevel4 {alias S4LEVEL4 kind 'STORAGE-LEVEL' units 'TAF'}
 define S_Shstalevel5 {alias S4LEVEL5 kind 'STORAGE-LEVEL' units 'TAF'}
 define S_Orovllevel5 {alias S6LEVEL5 kind 'STORAGE-LEVEL' units 'TAF'}
